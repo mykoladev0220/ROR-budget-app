@@ -1,0 +1,12 @@
+<h1> This is the Groups index page</h1>
+<div>
+    <div>
+        <% @groups.each do |group| %>
+            <%=render partial: "group_card", locals:{group:group} %>
+        <% end %>
+    </div>
+    <div>
+    <%= link_to "Add New Category", new_user_group_path(current_user.id), class: "btn add-new-category-btn" %>
+
+    </div>
+</div>
