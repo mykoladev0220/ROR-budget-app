@@ -1,0 +1,24 @@
+<%= form_with model: @expense, url: user_group_expenses_path(user_id:current_user.id, group_id:@group_id), method: :post do |f| %>
+    <%= render "devise/shared/error_messages", resource: @expense %>
+
+<div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category %>
+    <%= f.collection_select :group_id, @group, :id, :name, prompt: true, class: "form-control" %>
+  </div>
+
+
+
+  <div class="actions">
+    <%= f.submit "save" %>
+  </div>
+<% end %>
