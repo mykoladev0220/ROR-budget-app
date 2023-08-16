@@ -1,0 +1,3 @@
+class GroupExpensesController < ApplicationController
+    
+end
