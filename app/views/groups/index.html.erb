@@ -1,0 +1,14 @@
+<h1> This is the Groups index page</h1>
+<div>
+    <div>
+    <% @groups.each do |group| %>
+        <%= link_to user_group_expenses_path(user_id: current_user.id, group_id:group.id), class: 'view-transaction' do %>
+          <%= render partial: "group_card", locals: { group: group } %>
+        <% end %>
+      <% end %>
+    </div>
+    <div>
+    <%= link_to "Add New Category", new_user_group_path(current_user.id), class: "btn add-new-category-btn" %>
+
+    </div>
+</div>
