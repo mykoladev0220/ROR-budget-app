@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag 'splash-screen' %>
+
+<div class="splash-screen-main-container" >
+    <div class="main-text-container">
+        <h2 class="main-text">
+            Budget app
+        </h2>
+    </div>
+    <div class="splash-buttons-container">
+        <%= link_to "Sign in", user_session_path, class: "btn splash-login-btn" %>
+        <%= link_to "Sign up", new_user_registration_path, class: "btn splash-sign-up-btn" %>
+    </div>
+    
+</div>
