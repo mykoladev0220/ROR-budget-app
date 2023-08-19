@@ -31,7 +31,19 @@
 
 }
 
-.splash-login-btn,.splash-sign-up-btn{
+.splash-login-btn{
+    text-decoration: none;
+    height: 2em;
+    background-color:#3778c2;
+    color:#fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    outline: none;
+}
+.splash-sign-up-btn{
     text-decoration: none;
     height: 2em;
     color:#434b54;
@@ -43,7 +55,7 @@
     border-radius: 5px;
     outline: none;
 }
-.splash-login-btn:hover,
+
 .splash-sign-up-btn:hover{
     background-color:#3778c2;
     color:#fff;
