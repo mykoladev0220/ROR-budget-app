@@ -1,48 +1,52 @@
-.header-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3778c2;
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3778c2;
 }
 
-.back-link{
-    color:#fff;
-    text-decoration: none;
-    font-size: 2em;
-    margin: 0 0.5em;
+.back-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  margin: 0 0.5em;
 }
 
-.sign-up-btn{
-    margin: 0 0.5em;
-    background-color: #3778c2;
-    border-style: none;
-    color:#fff;
-    padding: 2px 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-}
-.sign-up-btn:hover{
-    margin: 0 0.5em;
-    background-color: #236ec4;    
+.sign-up-btn {
+  margin: 0 0.5em;
+  background-color: #3778c2;
+  border-style: none;
+  color: #fff;
+  padding: 2px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
-.sign-up-title{
-    color:#fff;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+.sign-up-btn:hover {
+  margin: 0 0.5em;
+  background-color: #236ec4;
 }
 
-.sign-up-email-input,.sign-up-name-input,.sign-up-password-input,.sign-up-confirm-password-input{
-    padding: 10px 2px;
-    outline: none;
-    border-bottom-style: solid;
-    border-bottom-color: #ccc;
-    border-bottom-width: 1px;
-    border-left-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    width: 99%;
-    font-size: 0.9em;
-    font-family: Arial, Helvetica, sans-serif;
+.sign-up-title {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.sign-up-email-input,
+.sign-up-name-input,
+.sign-up-password-input,
+.sign-up-confirm-password-input {
+  padding: 10px 2px;
+  outline: none;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  width: 99%;
+  font-size: 0.9em;
+  font-family: Arial, Helvetica, sans-serif;
 }

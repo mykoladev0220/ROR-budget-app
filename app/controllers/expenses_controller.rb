@@ -5,7 +5,6 @@ class ExpensesController < ApplicationController
     @user = current_user
     @group = Group.find(params[:group_id])
     @expenses = @user.expenses.joins(:groups).where(groups: { id: @group.id }).where(author_id: @user.id)
-  
   end
 
   def new
@@ -23,8 +22,6 @@ class ExpensesController < ApplicationController
     @group.expenses << @expense
 
     redirect_to user_group_expenses_path, notice: 'Expense was successfully created'
-
-    
   end
 
   def set_expense_params
