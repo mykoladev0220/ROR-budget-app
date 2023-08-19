@@ -1,10 +1,10 @@
-<div>
-    <img src="<%=group.icon %>" alt="<%= group.name %> icon" />
-    <div>
-        <p><%= group.name %></p>
-        <p><%= group.updated_at %></p>
-    <div>
-    <div>
-        <p>$ 17.5</p>
+<%= stylesheet_link_tag 'groups-stylesheet' %>
+<div class='group-card-main-container'>
+    <img src="<%=group.icon %>" alt="<%= group.name %> icon" class="group-card-img" />
+    <div class="group-card-name-container">
+        <p class= "group-card-name"><%= group.name %></p>
+    </div>
+    <div class="group-card-total-container">
+        <p class= "group-card-total"> $ <%=group.total_amount %></p>
     </div>
 </div>

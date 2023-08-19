@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!
   def index
     @user = User.all
   end
@@ -9,7 +10,6 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    @user.name = @user.full_name
     if @user.save
       redirect_to users_path, notice: 'User was successfully created.'
     else
@@ -18,6 +18,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation).merge(name: full_name)
+    params.require(:user).permit(:email, :password, :password_confirmation).merge(name:)
   end
 end
