@@ -86,7 +86,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:CaptainBawa/Budget-App.git
+  git clone git@github.com:Adams-Ghub/budget-app.git
 ```
 ### Install
 
