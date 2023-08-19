@@ -1,13 +1,17 @@
-<div>
-    <div>
+<%= stylesheet_link_tag 'groups-stylesheet' %>
+
+<%= render partial:"shared/custom_header", locals:{title:"CATEGORIES",back_link:user_groups_path(current_user.id)} %>
+<p class="notice"><%= notice %></p> 
+<p class="alert"><%= alert %></p>
+<div class="groups-index-main-container">
+    <div class="groups-card-container">
     <% @groups.each do |group| %>
         <%= link_to user_group_expenses_path(user_id: current_user.id, group_id:group.id), class: 'view-transaction' do %>
           <%= render partial: "group_card", locals: { group: group } %>
         <% end %>
       <% end %>
     </div>
-    <div>
-    <%= link_to "Add New Category", new_user_group_path(current_user.id), class: "btn add-new-category-btn" %>
-
+    <div class="groups-link-container">
+      <%= link_to "Add New Category", new_user_group_path(current_user.id), class: "btn add-new-category-btn" %>
     </div>
 </div>
