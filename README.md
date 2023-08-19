@@ -65,7 +65,7 @@
 
 - [Live Demo Link]()
 
-- [Presentation Video Link](https://www.loom.com/share/1220e448728243fa9de0bb2d4483f783?sid=babae4f9-8b89-41b9-8718-63aeb8188482)
+- [Presentation Video Link](https://www.loom.com/share/6d40ea9ec44d4fba81cab90dfc976ae4?sid=fec7ffd3-20d6-4fa7-8de4-83310ffe07ee)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -86,7 +86,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:CaptainBawa/Budget-App.git
+  git clone git@github.com:Adams-Ghub/budget-app.git
 ```
 ### Install
 
