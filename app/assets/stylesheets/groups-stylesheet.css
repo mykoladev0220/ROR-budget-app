@@ -1,0 +1,65 @@
+/* Group card partial begins */
+.group-card-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 0.5em; 
+    padding: 0.2em;
+    box-shadow: 1px 1px 5px #ddd;
+}
+
+.group-card-img{
+    width: 4rem;
+    height: 4rem;
+}
+
+
+
+/* Group Card ends */
+
+.group-card-total,.group-card-name{
+    color:#434b54;
+}
+
+.add-category-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.add-new-category-btn, .add-category-btn{
+    text-decoration: none;
+    height: 2em;
+    background-color:#5fb523;
+    color:#fff;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+    margin:1em 0.8em;
+}
+
+
+.view-transaction{
+    text-decoration: none;    
+}
+
+
+.icon-url-input, .groups-new-name-input{
+    padding: 10px 4px;
+    outline: none;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    border-bottom-width: 1px;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    width: 99%;
+    font-size: 0.9em;
+}
