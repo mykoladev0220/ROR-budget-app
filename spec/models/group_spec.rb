@@ -25,20 +25,6 @@ RSpec.describe Group, type: :model do
     end
   end
 
-  # context "Total expense amount" do
-  #     before do
-  #         @expense_one = Expense.create(name:'Mercedes benz', amount:2000, author_id: @user.id)
-  #         @expense_two = Expense.create(name:'Corolla S', amount:1200, author_id: @user.id)
-  #         @group.expenses<<@expense_one
-  #         @group.expenses<<@expense_two
-  #     end
-
-  #     it "returns the total expense for the group" do
-  #         expect(@group.total_amount).to eq(3200)
-  #     end
-
-  # end
-
   context 'Association tests' do
     it 'has many categories' do
       group = Group.reflect_on_association(:author)
