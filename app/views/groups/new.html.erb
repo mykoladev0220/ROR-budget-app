@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag 'groups-stylesheet' %>
+<%= render partial:"shared/custom_header", locals:{title:"CATEGORIES", back_link: user_groups_path(current_user.id)} %>
+
+<%= form_with model: @group, url: user_groups_path(current_user.id), class:'add-food-forms-container', method: :post do |f| %>
+  <%= render "devise/shared/error_messages", resource: @group %>
+
+  <div class="field">
+    <%= f.text_field :name, autofocus: true, placeholder:"Name", class:"groups-new-name-input"%>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :icon, placeholder:"Icon", class:"icon-url-input" %>
+  </div>
+
+  <div class="actions add-category-btn-container">
+    <%= f.submit "Add Category", class:"add-category-btn" %>
+  </div>
+<% end %>
+
+

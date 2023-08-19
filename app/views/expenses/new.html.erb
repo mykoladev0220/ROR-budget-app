@@ -1,0 +1,27 @@
+<%=stylesheet_link_tag  "expenses-stylesheet" %>
+
+<%= render partial:"shared/custom_header", locals:{title:"Transactions",back_link:user_groups_path(current_user.id)} %>
+
+<%= form_with model: @expense, url: user_group_expenses_path(user_id:current_user.id, group_id:@group_id), method: :post do |f| %>
+    <%= render "devise/shared/error_messages", resource: @expense %>
+
+<div class="field">
+    <%= f.text_field :name, autofocus: true, class:'expense-new-name', placeholder:"Name" %>
+  </div>
+
+  <div class="field">
+    <%= f.number_field :amount, class:'expense-new-amount', placeholder:"Amount" %>
+  </div>
+
+  <div class="field expense-new-select">
+    <%= f.collection_select :group_id, @group, :id, :name, prompt: true, class:"expense-new-group-select" %>
+  </div>
+
+
+
+  <div class="actions expense-save-btn-container ">
+    <%= f.submit "save", class:'expense-new-save-btn' %>
+  </div>
+  <p class="notice"><%= notice %></p> 
+<p class="alert"><%= alert %></p>
+<% end %>

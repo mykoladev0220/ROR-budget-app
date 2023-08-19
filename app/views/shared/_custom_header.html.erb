@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag 'partials-stylesheet' %>
+
+<div class="custom-header-main-container" >
+    <div class='custom-header-back-link-container'>
+        <%=link_to "&larr;".html_safe, back_link, class:"custom-header-back-link" %>
+    </div>
+    <div class="title-text">
+        <%=title %>
+    </div>
+    <div>
+        <% if user_signed_in? %> 
+        <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "sign-out-btn"%> 
+        <% else %>
+        <%= link_to "Sign Up", new_user_registration_path, class: "custom-header-sign-up-link", id: "sign-up-link", data: { remote: true } %>
+        <% end %> 
+    </div>
+</div>
+
+  

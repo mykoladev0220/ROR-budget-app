@@ -1,0 +1,33 @@
+<%= stylesheet_link_tag 'sign-up-stylesheet' %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+<div class="header-container">
+  <a href="/"  class="back-link">
+      &#8592;
+  </a>
+  <p class="sign-up-title">REGISTRATION</p>
+  <div class="actions">
+    <%= f.submit "Next", class: "sign-up-btn" %>
+  </div>
+</div>
+
+  <div class="field">
+    <%= f.text_field :name, autofocus: true, placeholder: "Full name", class: "sign-up-name-input" %>
+  </div>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "sign-up-email-input" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password",class: "sign-up-password-input" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm password",class: "sign-up-confirm-password-input" %>
+  </div>
+
+   <p class="notice"><%= notice %></p> 
+<p class="alert"><%= alert %></p>
+<% end %>
+
+

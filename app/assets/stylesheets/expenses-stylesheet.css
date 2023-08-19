@@ -1,0 +1,67 @@
+.expenses-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5em;
+  padding: 1em 0.5em;
+  background-color: #eee;
+}
+
+.add-transaction-btn,
+.expense-new-save-btn {
+  text-decoration: none;
+  height: 2em;
+  background-color: #5fb523;
+  color: #fff;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 1em 0.8em;
+}
+
+.expense-new-name,
+.expense-new-amount {
+  padding: 10px 4px;
+  outline: none;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  width: 99%;
+  font-size: 0.9em;
+}
+
+.expense-new-save-btn {
+  text-decoration: none;
+  height: 2em;
+  width: 95vw;
+  background-color: #5fb523;
+  color: #fff;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 1em 0.8em;
+}
+
+#expense_group_id {
+  padding: 10px 4px;
+  outline: none;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  width: 99%;
+  font-size: 0.9em;
+}
