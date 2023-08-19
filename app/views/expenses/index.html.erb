@@ -1,11 +1,18 @@
-<div>
+<%= stylesheet_link_tag 'expenses-stylesheet' %>
 
+<%= render partial:"shared/custom_header", locals:{title:"TRANSACTIONS", back_link:user_groups_path(current_user.id)} %>
+
+<div>
+<%= render partial: "groups/group_card", locals: { group: @group } %>
 <div>
 <% @expenses.each do |expense| %>
-    <div> <%=expense.name %></div>
-  <% end %>
+    <li class="expenses-list-item">
+        <div class="expense-list-name"> <%=expense.name %></div>
+        <div class="expense-list-date"> <%=expense.updated_at.strftime('%d-%m-%Y') %></div>
+        <div class="expense-list-amount">$<%=expense.amount %></div>
+    </li>
+    
+<% end %>
 </div>
-
     <%= link_to "Add new transaction", new_user_group_expense_path(user_id:current_user.id, group_id:@group.id), class: "add-transaction-btn" %>
-
 </div>
